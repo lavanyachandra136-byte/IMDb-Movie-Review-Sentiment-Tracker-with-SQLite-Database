@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IMDb Movie Review Sentiment Tracker</title>
+</head>
+<body>
+    <h1>IMDb Movie Sentiment Analysis</h1>
+
+    <form method="POST">
+        <label>Movie Name:</label><br>
+        <input type="text" name="movie" required><br><br>
+
+        <label>Enter Review:</label><br>
+        <textarea name="review" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+    {% endif %}
+
+    {% if chart_url %}
+        <h2>Movie Overall Sentiment</h2>
+        <img src="data:image/png;base64,{{ chart_url }}">
+    {% endif %}
+</body>
+</html>
