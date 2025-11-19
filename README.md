@@ -5,6 +5,8 @@ A Machine Learning + Flask Web Application that predicts whether a movie review 
 The system stores user-submitted movie names and their predicted sentiments in an SQLite database and displays results in a clean dashboard.
 
 
+
+
 🚀 Project Overview
 
 This project takes movie reviews, processes them using TF-IDF vectorization, and classifies them using Logistic Regression.
@@ -17,6 +19,8 @@ Users can enter any movie name and review through a web interface, and the app s
 ✔ Dashboard showing sentiment statistics (Positive vs Negative)
 
 
+
+
 🧠 Features
 
 ✔ Machine Learning model trained on IMDb dataset
@@ -26,6 +30,9 @@ Users can enter any movie name and review through a web interface, and the app s
 ✔ SQLite database integration
 
 ✔ Dashboard with sentiment graph
+
+
+
 
 
 🗂 Project Structure
@@ -40,6 +47,10 @@ imdb_sentiment_tracker/
 │── mode model.pkl
 ├── vectorizer.pkl
 
+
+
+
+
 ⚙ Technologies Used
 
 Technology	Purpose
@@ -49,6 +60,10 @@ Flask	Web Framework
 SQLite	Database
 Sklearn	ML model + TF-IDF
 HTML/CSS	Frontend
+
+
+
+
 
 🧪 Model Training
 
@@ -69,6 +84,10 @@ To train the model:
 
 python train_model.py
 
+
+
+
+
 ▶ How to Run the Application
 
 1️⃣ Install dependencies
@@ -82,6 +101,10 @@ python app.py
 3️⃣ Open in browser
 
 http://127.0.0.1:5000/
+
+
+
+
 
 
 📊 Dashboard
@@ -98,6 +121,3 @@ A sentiment bar chart
 
 
 All data is fetched from SQLite database.
-✔ Easy to run locally
-
-✔ Fully open-source
